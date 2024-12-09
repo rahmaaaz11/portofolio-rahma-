@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Pribadi</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #e8f5e9, #ffffff);
+            color: #333;
+        }
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        header h1 {
+            font-size: 2.8em;
+            margin: 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 10px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 16px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #4CAF50;
+        }
+        section {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-top: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        h2 {
+            color: #4CAF50;
+            transition: color 0.3s;
+        }
+        h2:hover {
+            color: #2E7D32;
+        }
+        .profile-photo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .profile-photo img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid #4CAF50;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+            margin-top: 40px;
+        }
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        a:hover {
+            color: #2E7D32;
+        }
+    </style>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Kartika Rahma Dewi",
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Universitas Yatsi Madani",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Jl. Aria Santika No.40A, RT.001/RW.003, Margasari",
+          "addressLocality": "Kec. Karawaci",
+          "addressRegion": "Banten",
+          "postalCode": "15114",
+          "addressCountry": "ID"
+        }
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+62 816-1794-1143",
+        "email": "rahmauym@gmail.com",
+        "areaServed": "Indonesia",
+        "hoursAvailable": "Mo-Fr 08:00-15:00"
+      }
+    }
+    </script>
+</head>
+<body>
+<header>
+    <h1>Portofolio</h1>
+    <nav>
+        <a href="#tentang">Tentang Saya</a>
+        <a href="#pendidikan">Riwayat Pendidikan</a>
+        <a href="#keterampilan">Keterampilan</a>
+        <a href="#hobi">Hobi</a>
+        <a href="#kontak">Kontak</a>
+    </nav>
+</header>
+
+<section id="tentang">
+    <div class="card">
+        <div class="profile-photo">
+            <img src="img/WhatsApp Image 2024-12-09 at 03.55.44_2811cb35.jpg"Foto Saya">
+        </div>
+        <h2>Tentang Saya</h2>
+        <p>
+            Halo! Nama saya Kartika Rahma Dewi, seorang mahasiswa S1 Ilmu Komputer yang sangat antusias dengan dunia teknologi. 
+            Saya memiliki minat yang mendalam dalam pemrograman, pengembangan web, dan analisis data.
+        </p>
+    </div>
+</section>
+
+<section id="pendidikan">
+    <div class="card">
+        <h2>Riwayat Pendidikan</h2>
+        <ul>
+            <li>SD: MI Alhasanah, lulus tahun 2016</li>
+            <li>SMP: Daarul Falahiyyah, lulus tahun 2020</li>
+            <li>SMA: Daarul Falahiyyah, lulus tahun 2023</li>
+        </ul>
+    </div>
+</section>
+
+<section id="keterampilan">
+    <div class="card">
+        <h2>Keterampilan</h2>
+        <ul>
+            <li>Programming: Python, Java, C++</li>
+            <li>Web Development: HTML, CSS, JavaScript</li>
+        </ul>
+    </div>
+</section>
+
+<section id="kontak">
+    <div class="card">
+        <h2>Kontak</h2>
+        <ul>
+            <li>Email: <a href="mailto:rahmauym@gmail.com">rahmauym@gmail.com</a></li>
+            <li>Telepon: +62 816-1794-1143</li>
+        </ul>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Portofolio Pribadi. Dibuat oleh Kartika Rahma Dewi.</p>
+</footer>
+</body>
+</html>
